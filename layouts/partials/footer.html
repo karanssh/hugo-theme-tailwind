@@ -3,7 +3,7 @@
     {{ partial "social_media.html" . }}
   </div>
   <div class="grow"></div>
-  <div class="flex flex-row">
+  <!-- <div class="flex flex-row">
     {{- $CopyrightSign := (printf `<i class="h-6 w-6 flex-none">%s</i>` (partial "icon.html" "copyright")) -}}
     {{- $SinceYear := .Site.Params.footer.since -}}
     {{- $CurrentYear := now.Format "2006" -}}
@@ -25,7 +25,7 @@
       "Copyright" $Copyright
     ) | safeHTML }}
     {{ end }}
-  </div>
+  </div> -->
   {{ if .Site.Params.footer.poweredby }}
   <div class="flex flex-row">
     {{- $Generator := `<a href="https://gohugo.io" target="_blank" rel="noopener" class="underline">Hugo</a>` -}}
